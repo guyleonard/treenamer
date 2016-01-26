@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+
+  <title>TREENAMER | Rename REFGEN IDs on Your Trees</title>
+  <link rel="stylesheet" type="text/css" media="screen" href=
+  "../treenamer/css/refgen.css" />
+  <link href=
+  'http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold,bolditalic'
+  rel='stylesheet' type='text/css' />
+  <script type="text/javascript">
+//<![CDATA[
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22428776-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.$
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://$
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefo$
+  })();
+
+  //]]>
+  </script>
+</head>
+
+<body>
+  <div class="title">
+    <span class="ref">TREE</span><span class="gen">NAMER</span>
+    <img src="../treenamer/css/treenamer_title.png" class="title"
+    alt="TREENAMER Logo" /><span class="subtitle">TREENAMER -
+    Rename REFGEN IDs in your Trees</span>
+<span class="subtitle">We have moved again. This website will shortly move to our new institution's servers. Redirects should be in place soon. The service should continue to run for a short time</span>
+  </div>
+
+  <div class="container">
+    <form enctype="multipart/form-data" action=
+    "/cgi-bin/treefix.cgi" method="post">
+      <div class="six_hundred">
+        <fieldset>
+          <legend>1. Tree File</legend> <label for="tree_file">File
+          to upload</label> <input id="tree_file" name="tree_file"
+          size="40" type="file" class="btn green" />
+        </fieldset>
+      </div>
+
+      <div class="six_hundred">
+        <fieldset>
+          <legend>2. Species List</legend> <label for=
+          "species_file">File to upload</label> <input id=
+          "species_file" name="species_file" size="40" type="file"
+          class="btn green" />
+        </fieldset>
+      </div>
+
+      <div class="column form">
+        <div class="three_hundred">
+          <fieldset class="two_a">
+            <legend>3a. Label Type</legend>
+
+            <ol>
+              <li>Please Choose:<br />
+              <label for="label_1"><input id="label_1" type="radio"
+              tabindex="3" name="label" value="both" checked=
+              "checked" />Taxa and [Accession]</label><br />
+              <label for="label_2"><input id="label_2" type="radio"
+              tabindex="4" name="label" value="acc" />Accession
+              Only</label><br />
+              <label for="label_3"><input id="label_3" type="radio"
+              tabindex="5" name="label" value="tax" />Taxa
+              Only</label><br />
+              <label for="label_4"><input id="label_4" type="radio"
+              tabindex="5" name="label" value="tax" />Full
+              Definition Line</label></li>
+            </ol>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="column form">
+        <div class="three_hundred">
+          <fieldset class="two_a">
+            <legend>3b. Taxa Label Style</legend>
+
+            <ol>
+              <li>Please Choose:<br />
+              <label for="block_1"><input id="block_1" type="radio"
+              tabindex="6" name="block" value="full" checked=
+              "checked" />Genus species</label><br />
+              <label for="block_2"><input id="block_2" type="radio"
+              tabindex="7" name="block" value="short" />G.
+              species</label><br />
+              <label for="block_3"><input id="block_3" type="radio"
+              tabindex="8" name="block" value=
+              "tiny" />"Gs"</label></li>
+            </ol>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="column form">
+        <div class="two_hundred">
+        <fieldset><legend>2011-10-24 - Updated</legend>
+	<font size ="2">
+	<ol>
+		<li>Now using Bio::Perl</li>
+		<li>Better support for trees</li>
+		<li>Reads SVG files (text replace)</li>
+	</ol>
+	</font>
+	</fieldset>
+        </div>
+      </div>
+
+      <div class="six_hundred">
+        <fieldset class="two_a">
+          <legend>5. Your Operating System</legend>
+
+          <ol>
+            <li>Please Choose:<br />
+            <label><input id="opsys_1" tabindex="9" name="opsys"
+            value="win" type="radio" /> Windows</label><br />
+            <label><input id="opsys_2" tabindex="10" name="opsys"
+            value="nix" checked="checked" type="radio" /> Unix /
+            Linux</label><br />
+            <label><input id="opsys_3" tabindex="11" name="opsys"
+            value="mac" type="radio" /> Apple Mac</label></li>
+          </ol>
+        </fieldset>
+      </div>
+
+      <div class="six_hundred">
+        <fieldset>
+          <legend>TREENAMER!</legend> <input class="btn green"
+          name="submit" value="TREENAMER!" type="submit" />
+        </fieldset>
+      </div>
+
+      <div class="six_hundred">
+        <fieldset>
+          <legend>Information / Sample Data / Help</legend>
+
+          <ol>
+            <li>You can find the full instructions <a href=
+            "treenamer/how_to_treenamer_old.pdf">here</a>.</li>
+
+            <li>A sample tree file is available <a href=
+            "treenamer/treenamer_sample_tree.tree">here</a> and a
+            REFGEN 'species file' is available <a href=
+            "treenamer/treenamer_sample_species.csv">here</a> (save
+            both files and select them in step 1 and 2 above).</li>
+
+            <li>Citation: <a href=
+            "http://www.la-press.com/refgen-and-treenamer-automated-sequence-data-handling-for-phylogenetic-a1451">
+            Leonard, G., et al. (2009). REFGEN and TREENAMER:
+            Automated Sequence Data Handling for Phylogenetic
+            Analysis in the Genomic Era. <em>Evolutionary
+            Bioinformatics Online</em>, 5:1-4.</a></li>
+
+            <li>TREENAMER has been used 602 times since April 2011 and was last used on Tue Jun  3 16:33:03 2014.</li>
+
+            <li>
+              <!-- AddThis Button BEGIN -->
+              <script type="text/javascript">
+//<![CDATA[
+                                var addthis_pub="guyleonard";
+                                //]]>
+              </script> <a href=
+              "http://www.addthis.com/bookmark.php?v=20"
+              onmouseover=
+              "return addthis_open(this, '', '[URL]', '[TITLE]')"
+              onmouseout="addthis_close()" onclick=
+              "return addthis_sendto()"><img src=
+              "http://s7.addthis.com/static/btn/lg-bookmark-en.gif"
+              width="125" height="16" alt="Bookmark and Share"
+              style="border:0" /></a><script type="text/javascript"
+              src="http://s7.addthis.com/js/200/addthis_widget.js">
+</script> <!-- AddThis Button END -->
+            </li>
+          </ol>
+          <!--<p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img src=
+      "http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /></a><a href=
+      "http://validator.w3.org/check?uri=referer"><img src=
+      "http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31"
+      width="88" /></a></p>-->
+        </fieldset>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
